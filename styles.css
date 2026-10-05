@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul{
+  
+  list-style-type: none;
+  padding: 0;
+  margin: 0%;
+}
+a{
+  text-decoration: none;
+}
+.heade-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
 
 .header,
 .hero-section,
-.footer{
+.footer {
     background-color: #1F2937;
 }
 
 
-.hero-section{
+.hero-section {
     color: #F9FAF8;
 }
