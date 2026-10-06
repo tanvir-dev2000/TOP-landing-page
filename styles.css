@@ -26,6 +26,7 @@ body {
 
 }
 
+
 .header-logo,
 .right-links{
   display: flex;
@@ -71,8 +72,20 @@ a {
 
 .hero-section{
   display: flex;
+  flex-direction: row;
   flex: 1;
 }
+.hero-section .left,
+.hero-section .right{
+  display: flex;
+  flex:1;
+}
+
+.hero-section .left{
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-section .main-text {
   color: #F9FAF8;
   font-size: 48px;
@@ -89,6 +102,7 @@ a {
 /* Information Section */
 .information{
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -96,6 +110,7 @@ a {
 /* Quotes Section */
 .quote{
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -104,6 +119,7 @@ a {
 .sign-up{
   display: flex;
   flex: 1;
+  
 }
 
 
