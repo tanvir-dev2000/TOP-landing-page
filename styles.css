@@ -4,33 +4,113 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-ul{
-  
+.header,
+.hero-section,
+.footer {
+  background-color: #1F2937;
+}
+
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+
+}
+
+.header-logo,
+.right-links{
+  display: flex;
+  gap: 15px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.right-links{
+  align-items: center;
+}
+
+
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0%;
 }
-a{
+
+a {
   text-decoration: none;
-}
-.heade-logo {
-    font-size: 24px;
-    color: #F9FAF8;
+  color: white;
+
 }
 
-.header,
-.hero-section,
+
+
+/* container */
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+/* Hero Section */
+
+.hero-section{
+  display: flex;
+  flex: 1;
+}
+.hero-section .main-text {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-section .secondary-text {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+
+
+/* Information Section */
+.information{
+  display: flex;
+  flex: 1;
+}
+
+
+/* Quotes Section */
+.quote{
+  display: flex;
+  flex: 1;
+}
+
+
+/* Contact-Sign up */
+.sign-up{
+  display: flex;
+  flex: 1;
+}
+
+
+
+/* Footer */
 .footer {
-    background-color: #1F2937;
-}
-
-
-.hero-section {
-    color: #F9FAF8;
+  text-align: center;
+  color: #F9FAF8;
+  padding: 8px 0px;
 }
