@@ -23,7 +23,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 8px 40px;
+  padding: 8px 84px;
 
 }
 
@@ -66,20 +66,18 @@ a {
   flex-direction: column;
   justify-content: space-between;
   
-
 }
-
 
 /* Hero Section */
 
 .hero-section{
-  
   display: flex;
   flex: 1;
-  padding: 0px 40px;
-
-  
+  padding: 64px 84px;
+  justify-content: space-between;
+  gap: 20px;
 }
+
 .hero-section .left,
 .hero-section .right{
   display: flex;
@@ -90,15 +88,10 @@ a {
   flex-direction: column;
 }
 
-.hero-section .left{
-  justify-content: center;
-  align-self: center;
-}
-
 .hero-section img{
-  width: 300px;
-  height: 150px;
-  
+  width: 400px;
+  height: 220px;
+  align-self: flex-start;
 }
 
 .hero-section .main-text {
@@ -225,6 +218,7 @@ a {
 /* Footer */
 .footer {
   justify-content: end;
+  align-self: flex-end;
   text-align: center;
   color: #F9FAF8;
   padding: 8px 0px;
