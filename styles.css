@@ -2,12 +2,13 @@
 
 body {
   height: 100vh;
-  margin: 0;
-  overflow: hidden;
+  margin: 0px;
+  overflow-y: scroll;
   font-family: Roboto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .header,
@@ -22,7 +23,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0px;
+  padding: 8px 40px;
 
 }
 
@@ -64,6 +65,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 
 }
 
@@ -71,19 +73,32 @@ a {
 /* Hero Section */
 
 .hero-section{
+  
   display: flex;
-  flex-direction: row;
   flex: 1;
+  padding: 0px 40px;
+
+  
 }
 .hero-section .left,
 .hero-section .right{
   display: flex;
-  flex:1;
+  justify-content: center;
 }
 
 .hero-section .left{
-  display: flex;
   flex-direction: column;
+}
+
+.hero-section .left{
+  justify-content: center;
+  align-self: center;
+}
+
+.hero-section img{
+  width: 300px;
+  height: 150px;
+  
 }
 
 .hero-section .main-text {
@@ -97,6 +112,14 @@ a {
   color: #E5E7EB;
 }
 
+.hero-section button{
+  color: white;
+  background-color: #3882F6;
+  font-weight: 900;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 16px;
+}
 
 
 /* Information Section */
@@ -104,6 +127,37 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding: 0px 40px;
+  padding-bottom: 64px;
+  
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0px;
+  
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  
+}
+.child{
+  width: 150px;
+  text-align: center;
+}
+
+.information img{
+  width: 150px;
+  height: 150px;
+  border-radius: 12%;
+  border: 3px solid #3882F6;
+  
 }
 
 
@@ -111,7 +165,26 @@ a {
 .quote{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
+  padding: 32px 150px;
+  background-color: #E5E7EB;
+}
+
+.quote .text{
+  font-style: italic;
+  font-size: 36px;
+  color: #1F2937;
+  margin: 0px;
+  
+}
+
+.quote .credit{
+  font-weight: 900;
+  align-self: flex-end;
+  margin: 0px;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 
@@ -119,13 +192,39 @@ a {
 .sign-up{
   display: flex;
   flex: 1;
+  flex-shrink: 0;
+  justify-content: center;
   
 }
 
+.sign-up .parent{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-radius: 6px;
+  color: white;
+  background: #3882F6;
+}
+
+.sign-up .main-text{
+  font-weight: 900;
+  font-size: larger;
+}
+
+.sign-up button{
+  color: white;
+  background-color: #3882F6;
+  font-weight: 900;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 16px;
+}
 
 
 /* Footer */
 .footer {
+  justify-content: end;
   text-align: center;
   color: #F9FAF8;
   padding: 8px 0px;
